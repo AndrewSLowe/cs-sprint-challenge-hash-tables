@@ -2,10 +2,14 @@ def intersection(arrays):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    _list = set(arrays[0])
 
-    return result
+    for i in range(len(arrays)):
+        
+        _list = list(set(_list) & set(arrays[i]))
 
+    # result is a list of the intersecting values
+    return _list
 
 if __name__ == "__main__":
     arrays = []
